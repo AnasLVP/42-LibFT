@@ -6,7 +6,7 @@
 /*   By: aabouyaz <aabouyaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 16:21:01 by aabouyaz          #+#    #+#             */
-/*   Updated: 2025/04/24 16:50:09 by aabouyaz         ###   ########.fr       */
+/*   Updated: 2025/04/24 19:58:22 by aabouyaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ int	ft_atoi(const char *nptr)
 		signe = -1;
 		i++;
 	}
-	if (nptr[i] == '+')
+	else if (nptr[i] == '+')
 		i++;
 	while (ft_isdigit(nptr[i]))
 	{
