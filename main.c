@@ -3,14 +3,13 @@
 #include <string.h>
 #include <stdlib.h>
 
-int			ft_atoi(const char *nptr);
+void	*ft_calloc(unsigned long nmemb, unsigned long size);
 
 
-int	main(int ac, char **av)
+int	main(void)
 {
+	char	*test;
 
-	(void) ac;
-	
-	printf("%d\n", atoi(av[1]));
-	printf("%d\n", ft_atoi(av[1]));
+	test = ft_calloc(2147483648, 1);
+	free(test);
 }
