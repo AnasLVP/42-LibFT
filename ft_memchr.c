@@ -1,30 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aabouyaz <aabouyaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/24 13:36:39 by aabouyaz          #+#    #+#             */
-/*   Updated: 2025/04/24 15:01:17 by aabouyaz         ###   ########.fr       */
+/*   Created: 2025/04/24 15:26:57 by aabouyaz          #+#    #+#             */
+/*   Updated: 2025/04/24 15:29:39 by aabouyaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned long	ft_strlen(const char *s);
-unsigned long	ft_strlcpy(char *dst, const char *src, unsigned long siz);
+void	*ft_memchr(const void *s, int c, unsigned long n);
 
-unsigned long	ft_strlcpy(char *dst, const char *src, unsigned long siz)
+void	*ft_memchr(const void *s, int c, unsigned long n)
 {
 	unsigned long	i;
+	unsigned char	l;
+	unsigned char	*res;
 
 	i = 0;
-	if (siz == 0)
-		return (ft_strlen(src));
-	while (i < siz - 1)
+	res = ((unsigned char *)s);
+	l = ((unsigned char)c);
+	while (res[i] && i < n)
 	{
-		dst[i] = src[i];
+		if (res[i] == l)
+			return (&res[i]);
 		i++;
 	}
-	dst[siz] = '\0';
-	return (ft_strlen(src));
+	return (0);
 }

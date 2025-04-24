@@ -1,30 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aabouyaz <aabouyaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/24 13:36:39 by aabouyaz          #+#    #+#             */
-/*   Updated: 2025/04/24 15:01:17 by aabouyaz         ###   ########.fr       */
+/*   Created: 2025/04/24 14:44:47 by aabouyaz          #+#    #+#             */
+/*   Updated: 2025/04/24 15:30:09 by aabouyaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned long	ft_strlen(const char *s);
-unsigned long	ft_strlcpy(char *dst, const char *src, unsigned long siz);
+char	*ft_strchr(const char *s, int c);
 
-unsigned long	ft_strlcpy(char *dst, const char *src, unsigned long siz)
+char	*ft_strchr(const char *s, int c)
 {
 	unsigned long	i;
+	char			*res;
 
 	i = 0;
-	if (siz == 0)
-		return (ft_strlen(src));
-	while (i < siz - 1)
+	res = (char *)s;
+	while (res[i])
 	{
-		dst[i] = src[i];
+		if (res[i] == c)
+			return (&res[i]);
 		i++;
 	}
-	dst[siz] = '\0';
-	return (ft_strlen(src));
+	return (0);
 }

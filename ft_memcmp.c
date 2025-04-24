@@ -1,30 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aabouyaz <aabouyaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/24 13:36:39 by aabouyaz          #+#    #+#             */
-/*   Updated: 2025/04/24 15:01:17 by aabouyaz         ###   ########.fr       */
+/*   Created: 2025/04/24 15:31:59 by aabouyaz          #+#    #+#             */
+/*   Updated: 2025/04/24 15:38:35 by aabouyaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned long	ft_strlen(const char *s);
-unsigned long	ft_strlcpy(char *dst, const char *src, unsigned long siz);
+int	ft_memcmp(const void *s1, const void *s2, unsigned long n);
 
-unsigned long	ft_strlcpy(char *dst, const char *src, unsigned long siz)
+int	ft_memcmp(const void *s1, const void *s2, unsigned long n)
 {
 	unsigned long	i;
+	unsigned char	*st1;
+	unsigned char	*st2;
 
+	if (n <= 0)
+		return (0);
 	i = 0;
-	if (siz == 0)
-		return (ft_strlen(src));
-	while (i < siz - 1)
-	{
-		dst[i] = src[i];
+	st1 = ((unsigned char *)s1);
+	st2 = ((unsigned char *)s2);
+	while (st1[i] == st2[i] && st1[i] && i < n)
 		i++;
-	}
-	dst[siz] = '\0';
-	return (ft_strlen(src));
+	return (st1[i] - st2[i]);
 }

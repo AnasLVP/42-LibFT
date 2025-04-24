@@ -1,30 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aabouyaz <aabouyaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/24 13:36:39 by aabouyaz          #+#    #+#             */
-/*   Updated: 2025/04/24 15:01:17 by aabouyaz         ###   ########.fr       */
+/*   Created: 2025/04/24 15:03:12 by aabouyaz          #+#    #+#             */
+/*   Updated: 2025/04/24 15:30:29 by aabouyaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned long	ft_strlen(const char *s);
-unsigned long	ft_strlcpy(char *dst, const char *src, unsigned long siz);
+int	ft_strncmp(const char *s1, const char *s2, unsigned long n);
 
-unsigned long	ft_strlcpy(char *dst, const char *src, unsigned long siz)
+int	ft_strncmp(const char *s1, const char *s2, unsigned long n)
 {
-	unsigned long	i;
+	int	i;
 
 	i = 0;
-	if (siz == 0)
-		return (ft_strlen(src));
-	while (i < siz - 1)
-	{
-		dst[i] = src[i];
+	while (s1[i] == s2[i] && s1[i] && i < n)
 		i++;
-	}
-	dst[siz] = '\0';
-	return (ft_strlen(src));
+	return (s1[i] - s2[i]);
 }

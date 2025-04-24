@@ -6,12 +6,11 @@
 /*   By: aabouyaz <aabouyaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 14:06:32 by aabouyaz          #+#    #+#             */
-/*   Updated: 2025/04/24 14:23:48 by aabouyaz         ###   ########.fr       */
+/*   Updated: 2025/04/24 15:01:14 by aabouyaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 unsigned long	ft_strlen(const char *s);
-
 unsigned long	ft_strlcat(char *dst, const char *src, unsigned long siz);
 
 unsigned long	ft_strlcat(char *dst, const char *src, unsigned long siz)

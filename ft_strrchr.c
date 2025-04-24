@@ -1,30 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aabouyaz <aabouyaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/24 13:36:39 by aabouyaz          #+#    #+#             */
-/*   Updated: 2025/04/24 15:01:17 by aabouyaz         ###   ########.fr       */
+/*   Created: 2025/04/24 14:56:05 by aabouyaz          #+#    #+#             */
+/*   Updated: 2025/04/24 15:01:21 by aabouyaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 unsigned long	ft_strlen(const char *s);
-unsigned long	ft_strlcpy(char *dst, const char *src, unsigned long siz);
+char			*ft_strrchr(const char *s, int c);
 
-unsigned long	ft_strlcpy(char *dst, const char *src, unsigned long siz)
+char	*ft_strrchr(const char *s, int c)
 {
 	unsigned long	i;
+	char			*res;
 
-	i = 0;
-	if (siz == 0)
-		return (ft_strlen(src));
-	while (i < siz - 1)
+	i = ft_strlen(s);
+	res = (char *)s;
+	while (i > 0)
 	{
-		dst[i] = src[i];
-		i++;
+		if (res[i] == c)
+			return (&res[i]);
+		i--;
 	}
-	dst[siz] = '\0';
-	return (ft_strlen(src));
+	return (0);
 }
