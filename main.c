@@ -1,14 +1,16 @@
 #include <bsd/string.h>
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
+#include <stdlib.h>
 
-int	ft_memcmp(const void *s1, const void *s2, unsigned long n);
+int			ft_atoi(const char *nptr);
 
-int	main(void)
+
+int	main(int ac, char **av)
 {
-	char *test = "bon la team, venez on se suicide !!!!";
 
-	printf("%d\n", ft_memcmp("sa", "as", 0));
-	printf("%d\n", memcmp("sa", "as", 0));
+	(void) ac;
+	
+	printf("%d\n", atoi(av[1]));
+	printf("%d\n", ft_atoi(av[1]));
 }
