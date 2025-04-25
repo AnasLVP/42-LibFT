@@ -6,7 +6,7 @@
 /*   By: aabouyaz <aabouyaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 19:15:05 by aabouyaz          #+#    #+#             */
-/*   Updated: 2025/04/25 16:45:49 by aabouyaz         ###   ########.fr       */
+/*   Updated: 2025/04/25 19:47:58 by aabouyaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,5 +43,6 @@ char			*ft_substr(char const *s, unsigned int start,
 					unsigned long len);
 char			*ft_strjoin(const char *s1, const char *s2);
 char			*ft_strtrim(char const *s1, char const *set);
+char			**ft_split(char const *s, char c);
 
 #endif
