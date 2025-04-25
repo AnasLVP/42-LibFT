@@ -6,7 +6,7 @@
 /*   By: aabouyaz <aabouyaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 15:31:59 by aabouyaz          #+#    #+#             */
-/*   Updated: 2025/04/24 20:45:07 by aabouyaz         ###   ########.fr       */
+/*   Updated: 2025/04/25 13:33:35 by aabouyaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	ft_memcmp(const void *s1, const void *s2, unsigned long n)
 	unsigned char	*st1;
 	unsigned char	*st2;
 
-	if (n <= 0)
+	if (n == 0)
 		return (0);
 	i = 0;
 	st1 = ((unsigned char *)s1);

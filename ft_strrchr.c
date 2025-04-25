@@ -6,7 +6,7 @@
 /*   By: aabouyaz <aabouyaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 14:56:05 by aabouyaz          #+#    #+#             */
-/*   Updated: 2025/04/24 21:18:03 by aabouyaz         ###   ########.fr       */
+/*   Updated: 2025/04/25 13:29:32 by aabouyaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,15 @@ char	*ft_strrchr(const char *s, int c)
 	unsigned long	i;
 	char			*res;
 
-	i = ft_strlen(s);
 	res = (char *)s;
+	if (c >= 128)
+		c = c % 128;
+	i = ft_strlen(s) + 1;
 	while (i > 0)
 	{
+		i--;
 		if (res[i] == c)
 			return (&res[i]);
-		i--;
 	}
 	return (0);
 }
