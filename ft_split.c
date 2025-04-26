@@ -6,16 +6,16 @@
 /*   By: aabouyaz <aabouyaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 19:46:01 by aabouyaz          #+#    #+#             */
-/*   Updated: 2025/04/25 19:46:50 by aabouyaz         ###   ########.fr       */
+/*   Updated: 2025/04/26 13:13:03 by aabouyaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char			**ft_split(char const *s, char c);
-static int		count_words(char const *s, char c);
-static int		word_len(const char *s, char c, int j);
-static char		*point_word(int word, const char *s, char sep);
+char		**ft_split(char const *s, char c);
+static int	count_words(char const *s, char c);
+static int	word_len(const char *s, char c, int j);
+static char	*point_word(int word, const char *s, char sep);
 
 static int	count_words(char const *s, char c)
 {
@@ -82,6 +82,21 @@ static char	*point_word(int word, const char *s, char sep)
 	return (&str[i]);
 }
 
+static void	freeall(char **tab)
+{
+	int		i;
+
+	i = 0;
+	while (tab[i])
+	{
+		free(tab[i]);
+		tab[i] = NULL;
+		i++;
+	}
+	free(tab);
+	tab = NULL;
+}
+
 char	**ft_split(char const *s, char c)
 {
 	char	**res;
@@ -94,8 +109,11 @@ char	**ft_split(char const *s, char c)
 	while (j < count_words(s, c))
 	{
 		res[j] = malloc(sizeof(char) * word_len(s, c, j + 1) + 1);
-		if (!res)
+		if (!res[j])
+		{
+			freeall(res);
 			return (NULL);
+		}
 		ft_strlcpy(res[j], point_word(j + 1, s, c), word_len(s, c, j + 1) + 1);
 		j++;
 	}
