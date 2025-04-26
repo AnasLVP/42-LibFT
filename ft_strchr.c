@@ -6,12 +6,11 @@
 /*   By: aabouyaz <aabouyaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 14:44:47 by aabouyaz          #+#    #+#             */
-/*   Updated: 2025/04/24 21:25:38 by aabouyaz         ###   ########.fr       */
+/*   Updated: 2025/04/26 14:17:42 by aabouyaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned long	ft_strlen(const char *s);
-char			*ft_strchr(const char *s, int c);
+#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {

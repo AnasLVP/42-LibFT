@@ -6,14 +6,11 @@
 /*   By: aabouyaz <aabouyaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 15:15:42 by aabouyaz          #+#    #+#             */
-/*   Updated: 2025/04/25 15:22:12 by aabouyaz         ###   ########.fr       */
+/*   Updated: 2025/04/26 14:18:37 by aabouyaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-char			*ft_substr(char const *s, unsigned int start,
-					unsigned long len);
 
 char	*ft_substr(char const *s, unsigned int start, unsigned long len)
 {

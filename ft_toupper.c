@@ -6,11 +6,9 @@
 /*   By: aabouyaz <aabouyaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 14:29:42 by aabouyaz          #+#    #+#             */
-/*   Updated: 2025/04/24 15:01:24 by aabouyaz         ###   ########.fr       */
+/*   Updated: 2025/04/26 14:18:44 by aabouyaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-int	ft_toupper(int c);
 
 int	ft_toupper(int c)
 {

@@ -6,12 +6,11 @@
 /*   By: aabouyaz <aabouyaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 13:19:50 by aabouyaz          #+#    #+#             */
-/*   Updated: 2025/04/24 20:52:28 by aabouyaz         ###   ########.fr       */
+/*   Updated: 2025/04/26 14:17:19 by aabouyaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memcpy(void *dest, const void *src, unsigned long n);
-void	*ft_memmove(void *dest, const void *src, unsigned long n);
+#include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, unsigned long n)
 {

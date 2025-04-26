@@ -6,11 +6,9 @@
 /*   By: aabouyaz <aabouyaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 11:30:05 by aabouyaz          #+#    #+#             */
-/*   Updated: 2025/04/24 11:36:20 by aabouyaz         ###   ########.fr       */
+/*   Updated: 2025/04/26 14:16:45 by aabouyaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-int	ft_isalpha(int c);
 
 int	ft_isalpha(int c)
 {

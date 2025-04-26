@@ -6,16 +6,11 @@
 /*   By: aabouyaz <aabouyaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 19:46:01 by aabouyaz          #+#    #+#             */
-/*   Updated: 2025/04/26 13:13:03 by aabouyaz         ###   ########.fr       */
+/*   Updated: 2025/04/26 14:17:38 by aabouyaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-char		**ft_split(char const *s, char c);
-static int	count_words(char const *s, char c);
-static int	word_len(const char *s, char c, int j);
-static char	*point_word(int word, const char *s, char sep);
 
 static int	count_words(char const *s, char c)
 {

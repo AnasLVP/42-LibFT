@@ -6,14 +6,11 @@
 /*   By: aabouyaz <aabouyaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 15:41:56 by aabouyaz          #+#    #+#             */
-/*   Updated: 2025/04/25 15:46:39 by aabouyaz         ###   ########.fr       */
+/*   Updated: 2025/04/26 14:17:55 by aabouyaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-char					*ft_strjoin(const char *s1, const char *s2);
-static unsigned long	lenmalloc(const char *s1, const char *s2);
 
 static unsigned long	lenmalloc(const char *s1, const char *s2)
 {

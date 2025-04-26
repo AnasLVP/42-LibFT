@@ -6,13 +6,11 @@
 /*   By: aabouyaz <aabouyaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 11:39:47 by aabouyaz          #+#    #+#             */
-/*   Updated: 2025/04/24 11:47:15 by aabouyaz         ###   ########.fr       */
+/*   Updated: 2025/04/26 14:16:39 by aabouyaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int c);
-int	ft_isdigit(int c);
-int	ft_isalnum(int c);
+#include "libft.h"
 
 int	ft_isalnum(int c)
 {

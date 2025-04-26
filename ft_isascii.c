@@ -6,11 +6,9 @@
 /*   By: aabouyaz <aabouyaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 11:48:21 by aabouyaz          #+#    #+#             */
-/*   Updated: 2025/04/24 19:35:14 by aabouyaz         ###   ########.fr       */
+/*   Updated: 2025/04/26 14:16:51 by aabouyaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-int	ft_isascii(int c);
 
 int	ft_isascii(int c)
 {

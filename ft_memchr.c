@@ -6,11 +6,9 @@
 /*   By: aabouyaz <aabouyaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 15:26:57 by aabouyaz          #+#    #+#             */
-/*   Updated: 2025/04/24 20:57:33 by aabouyaz         ###   ########.fr       */
+/*   Updated: 2025/04/26 14:17:04 by aabouyaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-void	*ft_memchr(const void *s, int c, unsigned long n);
 
 void	*ft_memchr(const void *s, int c, unsigned long n)
 {

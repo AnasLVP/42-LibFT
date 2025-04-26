@@ -6,11 +6,9 @@
 /*   By: aabouyaz <aabouyaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 11:51:06 by aabouyaz          #+#    #+#             */
-/*   Updated: 2025/04/24 11:53:24 by aabouyaz         ###   ########.fr       */
+/*   Updated: 2025/04/26 14:16:58 by aabouyaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-int	ft_isprint(int c);
 
 int	ft_isprint(int c)
 {

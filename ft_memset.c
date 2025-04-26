@@ -6,11 +6,9 @@
 /*   By: aabouyaz <aabouyaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 12:27:46 by aabouyaz          #+#    #+#             */
-/*   Updated: 2025/04/24 12:29:32 by aabouyaz         ###   ########.fr       */
+/*   Updated: 2025/04/26 14:17:22 by aabouyaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-void	*ft_memset(void *s, int c, unsigned long n);
 
 void	*ft_memset(void *s, int c, unsigned long n)
 {

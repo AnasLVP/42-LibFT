@@ -6,14 +6,11 @@
 /*   By: aabouyaz <aabouyaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 18:42:19 by aabouyaz          #+#    #+#             */
-/*   Updated: 2025/04/24 19:15:23 by aabouyaz         ###   ########.fr       */
+/*   Updated: 2025/04/26 14:17:48 by aabouyaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-
-unsigned long	ft_strlen(const char *s);
-char			*ft_strdup(const char *src);
+#include "libft.h"
 
 char	*ft_strdup(const char *src)
 {

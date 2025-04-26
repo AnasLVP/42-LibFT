@@ -6,11 +6,9 @@
 /*   By: aabouyaz <aabouyaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 15:43:27 by aabouyaz          #+#    #+#             */
-/*   Updated: 2025/04/24 20:36:22 by aabouyaz         ###   ########.fr       */
+/*   Updated: 2025/04/26 14:18:24 by aabouyaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-char	*ft_strnstr(const char *big, const char *little, unsigned long len);
 
 char	*ft_strnstr(const char *big, const char *little, unsigned long len)
 {

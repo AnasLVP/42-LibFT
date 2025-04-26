@@ -6,13 +6,11 @@
 /*   By: aabouyaz <aabouyaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 16:21:01 by aabouyaz          #+#    #+#             */
-/*   Updated: 2025/04/24 19:58:22 by aabouyaz         ###   ########.fr       */
+/*   Updated: 2025/04/26 14:16:24 by aabouyaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int			ft_isdigit(int c);
-static int	ft_isspace(char c);
-int			ft_atoi(const char *nptr);
+#include "libft.h"
 
 static int	ft_isspace(char c)
 {

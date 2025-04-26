@@ -6,11 +6,9 @@
 /*   By: aabouyaz <aabouyaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 11:37:06 by aabouyaz          #+#    #+#             */
-/*   Updated: 2025/04/24 11:54:06 by aabouyaz         ###   ########.fr       */
+/*   Updated: 2025/04/26 14:16:55 by aabouyaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-int	ft_isdigit(int c);
 
 int	ft_isdigit(int c)
 {

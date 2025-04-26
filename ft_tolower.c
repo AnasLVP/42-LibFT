@@ -6,11 +6,9 @@
 /*   By: aabouyaz <aabouyaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 14:32:21 by aabouyaz          #+#    #+#             */
-/*   Updated: 2025/04/24 14:32:46 by aabouyaz         ###   ########.fr       */
+/*   Updated: 2025/04/26 14:18:41 by aabouyaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-int	ft_tolower(int c);
 
 int	ft_tolower(int c)
 {

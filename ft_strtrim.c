@@ -6,15 +6,11 @@
 /*   By: aabouyaz <aabouyaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 16:43:36 by aabouyaz          #+#    #+#             */
-/*   Updated: 2025/04/25 16:44:50 by aabouyaz         ###   ########.fr       */
+/*   Updated: 2025/04/26 14:18:32 by aabouyaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-char		*ft_strtrim(char const *s1, char const *set);
-static int	ft_isinset(char c, char const *set);
-static int	lentrim(const char *s1, const char *set);
 
 static int	ft_isinset(char c, char const *set)
 {
