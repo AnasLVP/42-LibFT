@@ -6,13 +6,16 @@
 /*   By: aabouyaz <aabouyaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 19:15:05 by aabouyaz          #+#    #+#             */
-/*   Updated: 2025/04/27 11:31:39 by aabouyaz         ###   ########.fr       */
+/*   Updated: 2025/05/27 12:38:37 by aabouyaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+# include "get_next_line/get_next_line.h"
+# include <limits.h>
+# include <stdarg.h>
 # include <stdlib.h>
 # include <unistd.h>
 
@@ -69,5 +72,16 @@ void				ft_lstiter(t_list *lst, void (*f)(void *));
 void				ft_lstclear(t_list **lst, void (*del)(void *));
 t_list				*ft_lstmap(t_list *lst, void *(*f)(void *),
 						void (*del)(void *));
+
+int					ft_putstr(char *s);
+void				ft_putnbr_unsigned(unsigned long long n, int *add);
+void				ft_putnbr(long long n, int *add);
+int					ft_putchar(char c);
+void				ft_putaddr(void *point, int *add);
+void				ft_put_hex(long nbr, int caps, int *add);
+int					ft_printf(const char *format, ...);
+
+char				*get_next_line(int fd);
+void				ft_freeall(char **tab);
 
 #endif

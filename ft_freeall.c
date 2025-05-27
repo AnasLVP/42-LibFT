@@ -1,23 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_freeall.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aabouyaz <aabouyaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/24 11:56:35 by aabouyaz          #+#    #+#             */
-/*   Updated: 2025/05/27 12:35:36 by aabouyaz         ###   ########.fr       */
+/*   Created: 2025/05/27 12:22:48 by aabouyaz          #+#    #+#             */
+/*   Updated: 2025/05/27 12:50:33 by aabouyaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned long	ft_strlen(const char *s)
+#include "libft.h"
+
+void	ft_freeall(char **tab)
 {
-	unsigned long	i;
+	int	i;
 
 	i = 0;
-	if (!s)
-		return (0);
-	while (s[i])
+	while (tab[i])
+	{
+		free(tab[i]);
+		tab[i] = NULL;
 		i++;
-	return (i);
+	}
+	free(tab);
+	tab = NULL;
 }

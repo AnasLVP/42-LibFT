@@ -1,23 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aabouyaz <aabouyaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/24 11:56:35 by aabouyaz          #+#    #+#             */
-/*   Updated: 2025/05/27 12:35:36 by aabouyaz         ###   ########.fr       */
+/*   Created: 2025/05/05 13:27:12 by aabouyaz          #+#    #+#             */
+/*   Updated: 2025/05/27 11:28:20 by aabouyaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned long	ft_strlen(const char *s)
-{
-	unsigned long	i;
+#include "libft.h"
 
-	i = 0;
-	if (!s)
-		return (0);
-	while (s[i])
-		i++;
-	return (i);
+void	ft_putnbr(long long n, int *add)
+{
+	if (n == LLONG_MIN)
+	{
+		*add = *add + ft_putstr("-9223372036854775808");
+		return ;
+	}
+	if (n < 0)
+	{
+		*add = *add + ft_putchar('-');
+		n = -n;
+	}
+	if (n >= 10)
+		ft_putnbr(n / 10, add);
+	*add = *add + ft_putchar((n % 10) + '0');
 }

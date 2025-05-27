@@ -6,7 +6,7 @@
 /*   By: aabouyaz <aabouyaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 19:46:01 by aabouyaz          #+#    #+#             */
-/*   Updated: 2025/04/26 14:17:38 by aabouyaz         ###   ########.fr       */
+/*   Updated: 2025/05/27 12:23:55 by aabouyaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,21 +77,6 @@ static char	*point_word(int word, const char *s, char sep)
 	return (&str[i]);
 }
 
-static void	freeall(char **tab)
-{
-	int		i;
-
-	i = 0;
-	while (tab[i])
-	{
-		free(tab[i]);
-		tab[i] = NULL;
-		i++;
-	}
-	free(tab);
-	tab = NULL;
-}
-
 char	**ft_split(char const *s, char c)
 {
 	char	**res;
@@ -106,7 +91,7 @@ char	**ft_split(char const *s, char c)
 		res[j] = malloc(sizeof(char) * word_len(s, c, j + 1) + 1);
 		if (!res[j])
 		{
-			freeall(res);
+			ft_freeall(res);
 			return (NULL);
 		}
 		ft_strlcpy(res[j], point_word(j + 1, s, c), word_len(s, c, j + 1) + 1);

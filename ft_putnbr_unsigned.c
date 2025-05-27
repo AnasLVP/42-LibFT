@@ -1,23 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr_unsigned.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aabouyaz <aabouyaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/24 11:56:35 by aabouyaz          #+#    #+#             */
-/*   Updated: 2025/05/27 12:35:36 by aabouyaz         ###   ########.fr       */
+/*   Created: 2025/05/05 13:37:19 by aabouyaz          #+#    #+#             */
+/*   Updated: 2025/05/27 11:27:53 by aabouyaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned long	ft_strlen(const char *s)
-{
-	unsigned long	i;
+#include "libft.h"
 
-	i = 0;
-	if (!s)
-		return (0);
-	while (s[i])
-		i++;
-	return (i);
+void	ft_putnbr_unsigned(unsigned long long n, int *add)
+{
+	unsigned int	nbr;
+
+	nbr = (unsigned int)n;
+	if (nbr >= 10)
+		ft_putnbr_unsigned(nbr / 10, add);
+	*add = *add + ft_putchar((nbr % 10) + '0');
 }

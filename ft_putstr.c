@@ -1,23 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aabouyaz <aabouyaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/24 11:56:35 by aabouyaz          #+#    #+#             */
-/*   Updated: 2025/05/27 12:35:36 by aabouyaz         ###   ########.fr       */
+/*   Created: 2025/05/05 10:33:22 by aabouyaz          #+#    #+#             */
+/*   Updated: 2025/05/27 11:27:19 by aabouyaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned long	ft_strlen(const char *s)
+#include "libft.h"
+
+int	ft_putstr(char *s)
 {
-	unsigned long	i;
+	int	i;
 
 	i = 0;
 	if (!s)
-		return (0);
+		return (write(1, "(null)", 6));
 	while (s[i])
+	{
+		ft_putchar(s[i]);
 		i++;
+	}
 	return (i);
 }

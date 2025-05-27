@@ -1,23 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_put_hex.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aabouyaz <aabouyaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/24 11:56:35 by aabouyaz          #+#    #+#             */
-/*   Updated: 2025/05/27 12:35:36 by aabouyaz         ###   ########.fr       */
+/*   Created: 2025/05/05 13:19:57 by aabouyaz          #+#    #+#             */
+/*   Updated: 2025/05/27 11:29:36 by aabouyaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned long	ft_strlen(const char *s)
-{
-	unsigned long	i;
+#include "libft.h"
 
-	i = 0;
-	if (!s)
-		return (0);
-	while (s[i])
-		i++;
-	return (i);
+void	ft_put_hex(long nbr, int caps, int *add)
+{
+	char			*dict;
+	char			c;
+	unsigned int	n;
+
+	n = (unsigned int)nbr;
+	if (!caps)
+		dict = "0123456789abcdef";
+	else
+		dict = "0123456789ABCDEF";
+	c = dict[n % 16];
+	if (n / 16)
+		ft_put_hex(n / 16, caps, add);
+	*add = *add + ft_putchar(c);
 }
