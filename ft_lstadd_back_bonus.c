@@ -6,7 +6,7 @@
 /*   By: aabouyaz <aabouyaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/27 11:07:41 by aabouyaz          #+#    #+#             */
-/*   Updated: 2025/04/27 11:12:01 by aabouyaz         ###   ########.fr       */
+/*   Updated: 2025/05/28 16:20:28 by aabouyaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,8 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	if (!last)
 		*lst = new;
 	else
+	{
+		new->previous = last;
 		last->next = new;
+	}
 }
