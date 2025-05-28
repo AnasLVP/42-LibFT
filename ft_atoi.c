@@ -6,7 +6,7 @@
 /*   By: aabouyaz <aabouyaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 16:21:01 by aabouyaz          #+#    #+#             */
-/*   Updated: 2025/04/26 14:16:24 by aabouyaz         ###   ########.fr       */
+/*   Updated: 2025/05/28 12:39:17 by aabouyaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,11 @@ static int	ft_isspace(char c)
 	return (0);
 }
 
-int	ft_atoi(const char *nptr)
+long	ft_atoi(const char *nptr)
 {
 	int		i;
 	long	res;
 	int		signe;
-	int		ret;
 
 	i = 0;
 	res = 0;
@@ -44,6 +43,5 @@ int	ft_atoi(const char *nptr)
 		res = res * 10 + (nptr[i] - '0');
 		i++;
 	}
-	ret = (int)(res * signe);
-	return (ret);
+	return (res * signe);
 }
