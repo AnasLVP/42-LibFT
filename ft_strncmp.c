@@ -6,7 +6,7 @@
 /*   By: aabouyaz <aabouyaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 15:03:12 by aabouyaz          #+#    #+#             */
-/*   Updated: 2025/04/26 14:18:20 by aabouyaz         ###   ########.fr       */
+/*   Updated: 2025/05/28 13:53:26 by aabouyaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,4 +26,14 @@ int	ft_strncmp(const char *s1, const char *s2, unsigned long n)
 	a = (unsigned char)s1[i];
 	b = (unsigned char)s2[i];
 	return (a - b);
+}
+
+int	ft_strcmp(const char *s1, const char *s2)
+{
+	int	i;
+
+	i = 0;
+	while (s1[i] == s2[i] && s1[i])
+		i++;
+	return (s1[i] - s2[i]);
 }

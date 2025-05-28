@@ -6,7 +6,7 @@
 /*   By: aabouyaz <aabouyaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 19:15:05 by aabouyaz          #+#    #+#             */
-/*   Updated: 2025/05/28 12:38:49 by aabouyaz         ###   ########.fr       */
+/*   Updated: 2025/05/28 14:56:28 by aabouyaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,6 +65,7 @@ typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
+	struct s_list	*previous;
 }					t_list;
 
 t_list				*ft_lstnew(void *content);
@@ -98,5 +99,6 @@ void				freeall_gnl(char ***res, int fd);
 
 // others
 void				ft_freeall(char **tab);
+int					ft_strcmp(const char *s1, const char *s2);
 
 #endif
