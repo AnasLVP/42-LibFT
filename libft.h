@@ -6,7 +6,7 @@
 /*   By: aabouyaz <aabouyaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 19:15:05 by aabouyaz          #+#    #+#             */
-/*   Updated: 2025/05/28 16:25:04 by aabouyaz         ###   ########.fr       */
+/*   Updated: 2025/07/09 12:40:49 by aabouyaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,5 +100,8 @@ void				freeall_gnl(char ***res, int fd);
 // others
 void				ft_freeall(char **tab);
 int					ft_strcmp(const char *s1, const char *s2);
+void				print_int_table(int *tab);
+void				print_str_table(char **tab);
+int					count_elem(void **tab);
 
 #endif
