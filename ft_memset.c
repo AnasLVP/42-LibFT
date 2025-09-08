@@ -6,9 +6,11 @@
 /*   By: aabouyaz <aabouyaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 12:27:46 by aabouyaz          #+#    #+#             */
-/*   Updated: 2025/04/26 14:17:22 by aabouyaz         ###   ########.fr       */
+/*   Updated: 2025/09/08 10:39:55 by aabouyaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	*ft_memset(void *s, int c, unsigned long n)
 {
