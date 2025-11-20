@@ -3,8 +3,6 @@
 Libft est une bibliothèque C réalisée dans le cadre du cursus 42, destinée à recréer un ensemble de fonctions de la libc ainsi que des fonctions utilitaires supplémentaires.
 Elle sert de base pour de nombreux projets de l’école.
 
----
-
 ## 🧱 Contenu du projet
 
 ##La bibliothèque contient principalement :
