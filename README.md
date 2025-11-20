@@ -20,7 +20,7 @@ Elle sert de base pour de nombreux projets de l’école.
 - Gestion dynamique de mémoire
 - Création et manipulation de substrings, split, join, trim…
 
-** Fonctions de listes chaînées**
+**Fonctions de listes chaînées**
 - Fonction de création et d'allocation dynamique de listes chaînées
 - Gestion d’une liste chaînée 't_list' et de ses données
 - Suppression de listes chaînées
