@@ -17,6 +17,9 @@ Elle sert de base pour de nombreux projets de l’école.
 - Fonctions de manipulation de chaînes plus avancées
 - Gestion dynamique de mémoire
 - Création et manipulation de substrings, split, join, trim…
+- ft_printf: fonction printf refaite
+- get_next_line: fonction pour avoir la ligne suivante d'un file descriptor
+- Fonctions pour afficher le contenu de tableaux
 
 **Fonctions de listes chaînées**
 - Fonction de création et d'allocation dynamique de listes chaînées
